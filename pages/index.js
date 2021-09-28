@@ -12,7 +12,7 @@ export default function Home({ activity }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`http://www.boredapi.com/api/activity/`);
+  const res = await fetch(`https://www.boredapi.com/api/activity/`);
 
   const activity = await res.json();
 

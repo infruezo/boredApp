@@ -6,7 +6,7 @@ function Header({ activity }) {
   const [updateActivity, setUpdateActivity] = useState(activity);
 
   const update = async ({ activity }) => {
-    const res = await fetch(`http://www.boredapi.com/api/activity/`);
+    const res = await fetch(`https://www.boredapi.com/api/activity/`);
     const data = await res.json();
     setUpdateActivity(data);
   };
